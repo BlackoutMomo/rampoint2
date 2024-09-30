@@ -1,0 +1,145 @@
+@media (min-width: 1920px) {
+  .content-sem-perfil {
+    margin-left: 100em;
+  }
+}
+
+@media (max-width: 1280px) {
+  .logoBranca {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Estilos aqui */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #perfil {
+    float: left;
+    display: none;
+  }
+
+  #drop {
+    display: block;
+  }
+
+  .info-box {
+    width: auto;
+    text-align: center;
+    width: 50%;
+  }
+
+  .descricao-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+
+  .copyright {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  p {
+    margin-bottom: 10px;
+  }
+
+  #medalhas {
+    width: 280px;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer-container .logo {
+    margin: 0;
+    bottom: 20px;
+    flex-direction: column;
+  }
+
+  .flor img {
+    visibility: hidden;
+  }
+
+  .flor img {
+    visibility: hidden;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+  }
+
+  .footer-container .descricao-footer {
+    margin-top: 0;
+    display: block;
+  }
+
+  .descricao-footer {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+
+  /* .geral, .contato {
+    margin: 70px;
+
+  }*/
+
+  .endereco {
+    max-width: 100%;
+  }
+
+  .footer-container button {
+    margin-right: 10px;
+  }
+
+  h3 {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .email {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer-container {
+    width: 320px;
+    height: auto;
+    position: none;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  h3 {
+    margin-top: 15px;
+  }
+
+  .email {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+  }
+
+  .footer-container .logo {
+    width: 80px;
+  }
+}

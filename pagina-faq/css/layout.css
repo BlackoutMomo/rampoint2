@@ -1,0 +1,261 @@
+/* Dispositivos móveis pequenos (em pé) */
+@media (min-width: 320px) and (max-width: 421px) {
+  .img-fundo {
+    width: 73em;
+    position: relative;
+    right: 17em;
+    margin-bottom: 12em;
+    z-index: -1;
+  }
+
+  #titulo-inicial {
+    font-size: 1em;
+    width: 2%;
+    line-height: 0.9em;
+    position: absolute;
+    top: 1em;
+    left: 0.5em;
+    z-index: 1;
+  }
+
+  #texto-inicial {
+    font-family: "Poppins-semibold";
+    color: var(--preto);
+    width: 28%;
+    line-height: 1.5em;
+    text-align: start;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 24em;
+    right: 55em;
+  }
+  .campo1 {
+    margin-top: 25em;
+  }
+  /* footer */
+  .footer-container {
+    width: 100%;
+    height: auto;
+    position: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logoBranca {
+    display: none;
+  }
+
+  .geral {
+    margin-left: 55px;
+  }
+
+  .redes-sociais,
+  .contato {
+    margin-top: 30px;
+    margin-left: 55px;
+  }
+
+  .footer-container .descricao-footer ul {
+    list-style-type: none;
+    padding: 0px 5px;
+  }
+
+  .descricao-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .email {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 55px;
+  }
+
+  #email {
+    height: 20px;
+  }
+
+  .footer-container .logo {
+    width: 100%;
+  }
+  /* footer */
+}
+
+/* Dispositivos móveis médios (em pé) */
+@media (max-width: 375px) {
+  .flor img {
+    visibility: hidden;
+  }
+
+  .email {
+    flex-wrap: wrap;
+  }
+}
+
+/* Dispositivos móveis grandes (em pé) */
+@media (max-width: 425px) {
+  .footer-container .logo {
+    margin: 0;
+    bottom: 20px;
+    flex-direction: column;
+  }
+
+  .flor img {
+    visibility: hidden;
+  }
+
+  .email {
+    margin-left: 10px;
+  }
+
+  .footer-container .descricao-footer {
+    margin-top: 0;
+  }
+
+  .descricao-footer {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+
+  .endereco {
+    max-width: 100%;
+  }
+
+  .footer-container button {
+    margin-right: 10px;
+  }
+
+  .logoBranca-small {
+    width: 150px;
+  }
+
+  h3 {
+    margin-top: 15px;
+  }
+}
+
+/* Tablets e dispositivos móveis em modo paisagem */
+@media (max-width: 768px) {
+  .flor img {
+    visibility: hidden;
+  }
+
+  .logoBranca-small {
+    display: block;
+    width: 150px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .faq-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .faq-sidebar {
+    margin: 100px;
+  }
+
+  .perguntas {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* Telas maiores (768px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #perfil {
+    display: none;
+  }
+
+  #drop {
+    display: block;
+  }
+
+  .info-box {
+    text-align: center;
+    width: 50%;
+  }
+
+  .descricao-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+
+  .copyright {
+    margin-left: 80px;
+  }
+}
+
+/* Dispositivos médios a grandes */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .logoBranca {
+    display: none;
+  }
+}
+
+/* Laptops e desktops maiores */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  /* Estilos aqui */
+}
+
+/* Telas grandes */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  /* Estilos aqui */
+}
+
+/* Ocultar elementos em dispositivos móveis */
+@media (max-width: 895px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  nav ul {
+    justify-content: space-between;
+    position: static;
+    padding-left: 0;
+  }
+
+  nav a {
+    padding-right: 30px;
+  }
+
+  #logo,
+  #logo-nav {
+    margin-left: 20px;
+  }
+
+  #perfil {
+    display: none;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
+  }
+}

@@ -1,0 +1,137 @@
+@media (max-width: 775px) {
+  .container {
+    width: 45em;
+  }
+
+  .genero::after {
+    right: 18em;
+  }
+  
+  .flatpickr-calendar {
+    font-size: 13px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 725px) {
+  .container {
+    width: 42em;
+  }
+}
+
+@media (max-width: 685px) {
+  .container {
+    width: 40em;
+  }
+}
+
+@media (max-width: 645px) {
+  .container {
+    width: 35em;
+  }
+
+  #recover-password {
+    width: 13em;
+    padding: 0;
+  }
+
+  .grupo {
+    width: 15em;
+  }
+
+  #email,
+  #senha {
+    width: 17em;
+  }
+
+  #genero,
+  #data-cadastro {
+    width: 9em;
+  }
+
+  .genero::after {
+    top: 21.8em;
+    right: 14.5em;
+  }
+
+  .confirmarSenha {
+    display: flex;
+    width: 9em;
+  }
+
+  #confirmarSenha {
+    width: 9em;
+  }
+
+  .termos {
+    width: 15em;
+  }
+
+  .flatpickr-calendar {
+    font-size: 12px;
+    width: 85%;
+  }
+
+  .flatpickr-day {
+    font-size: 11px;
+  }
+
+  .flatpickr-month {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 555px) {
+  .container {
+    width: 33em;
+  }
+
+  .grupo {
+    width: 14em;
+  }
+
+  .sign-up {
+    overflow: hidden;
+  }
+
+  .sign-up .email {
+    width: 14em;
+  }
+
+  #senha-cadastro,
+  #confirmarSenha {
+    width: 8em;
+  }
+
+  .flatpickr-calendar {
+    font-size: 11px;
+    width: 80%;
+  }
+
+  .flatpickr-day,
+  .flatpickr-month {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 535px) {
+  .container {
+    width: 30em;
+  }
+}
+
+@media (max-width: 485px) {
+  .container {
+    width: 28em;
+  }
+
+  .flatpickr-calendar {
+    font-size: 10px;
+    width: 75%;
+  }
+
+  .flatpickr-day,
+  .flatpickr-month {
+    font-size: 9px;
+  }
+}

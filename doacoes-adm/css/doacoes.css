@@ -1,0 +1,375 @@
+@import url(../css/font.css);
+@import url(../css/cores.css);
+
+.campo-titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 110px 50px 40px 50px;
+}
+
+#btn-filtrar {
+  background-color: #fff;
+  width: 12.5em;
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  outline: none;
+  padding: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+select {
+  font-family: "Blinker-semibold";
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("../img/seta-select.svg") no-repeat right 10px center;
+  padding: 10px;
+  padding-right: 30px;
+  width: 100%;
+  font-size: 16px;
+}
+
+option[disabled] {
+  display: none;
+}
+
+#btn-filtrar option {
+  font-family: "Blinker-semibold";
+  background-color: none;
+  color: #121212;
+}
+
+#btn-filtrar option:checked {
+  background-color: none;
+  color: #121212;
+}
+
+.titulo-inicial {
+  font-family: "Blinker-semibold";
+  color: #2a55c2;
+}
+
+/* campo inicial */
+.campo-inicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+}
+
+.fundo-doacoes {
+  background-color: #fff;
+  width: 100%;
+  height: 27em;
+  border-radius: 15px;
+}
+
+.tabela-doacoes {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0 2em 0;
+}
+
+.tabela-doacoes th,
+.tabela-doacoes td {
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tabela-doacoes th {
+  font-family: "Poppins-medium";
+  font-size: 14px;
+  color: #555;
+}
+
+.tabela-doacoes td {
+  font-family: "Blinker-regular";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.peca {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-left: 2em;
+}
+
+.peca img {
+  max-width: 4em;
+}
+
+.nome-peca {
+  font-family: "Blinker-semibold";
+  margin: 0 0 1em 0;
+}
+
+.tipo-interno,
+.tipo-periferico,
+.tipo-estrutura {
+  width: 6em;
+  height: 2em;
+  font-family: "Blinker-regular";
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.tipo-interno {
+  background-color: #fee333;
+}
+
+.tipo-periferico {
+  background-color: #c8d7fe;
+}
+
+.tipo-estrutura {
+  background-color: #e1c6f6;
+}
+
+.vistoria-realizada,
+.vistoria-pendente {
+  width: 7em;
+  height: 2em;
+  font-family: "Blinker-regular";
+  border: none;
+  border-radius: 15px;
+  margin: 0 0 0 2em;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+.vistoria-realizada {
+  background-color: #ecfdf3;
+  color: #508d3f;
+}
+
+.vistoria-pendente {
+  background-color: #ffeeee;
+  color: #d40000;
+}
+
+.opcoes {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.opcoes img {
+  width: 1em;
+  height: 1em;
+}
+
+/* Estilos do Modal */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  width: 80%; 
+  max-width: 300px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão de Fechar */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos do Menu de Opções */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.0); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 17em 0 0 77.5em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#optionsModal1 .modal-content {
+  width: 9em;
+  height: 7.5em;
+}
+
+#optionsModal2 .modal-content {
+  width: 9em;
+  height: 7.5em;
+  margin: 21.5em 0 0 77.5em;
+}
+
+#optionsModal3 .modal-content {
+  width: 9em;
+  height: 7.5em;
+  margin: 26em 0 0 77.5em;
+}
+
+#optionsModal4 .modal-content {
+  width: 9em;
+  height: 7.5em;
+  margin: 30.5em 0 0 77.5em;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-content li {
+  margin: 0;
+}
+
+.confirm-modal-content {
+  padding: 20px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 10em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-button {
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.edit-button {
+  font-family: "Poppins-regular"; 
+  background-color: #c8d7fe;
+  color: #2a55c2;
+  border-radius: 8px;
+  width: 8em;
+  margin: 0;
+}
+
+.edit-button:hover {
+  cursor: pointer;
+}
+
+.delete-button {
+  font-family: "Poppins-regular";
+  background-color: #ffeeee;
+  color: #d40000;
+  border-radius: 8px;
+  width: 8em;
+  margin: 0.5em 0;
+}
+
+.delete-button:hover {
+  cursor: pointer;
+}
+
+.confirm-delete-button {
+  background-color: #f44336;
+  color: white;
+  margin: 0.5em 0;
+  width: 8em;
+  border-radius: 8px;
+}
+
+.confirm-delete-button:hover {
+  cursor: pointer;
+}
+
+.cancel-delete-button {
+  background-color: #9e9e9e; 
+  color: white;
+  width: 8em;
+  border-radius: 8px;
+}
+
+.cancel-delete-button:hover {
+  cursor: pointer;
+}
+
+#icon-modal {
+  height: 1em;
+  margin-right: 0.5em;
+}
+
+/* btn vistoria */
+.botao-vistoria {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 2em;
+}
+
+.btn-vistoria {
+  font-family: "Poppins-semibold";
+  background-color: #CDCDCD;
+  border: none;
+  border-radius: 10px;
+  width: 12em;
+  height: 3em;
+}
+
+.btn-vistoria a {
+  color: #fff;
+  text-decoration: none;
+}

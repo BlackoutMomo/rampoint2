@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/sidebar.css" />
+  <link rel="stylesheet" href="./css/perfil.css" />
+  <link rel="stylesheet" href="./css/layout.css">
+  <title>Perfil</title>
+  <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon" />
+
+  <!-- icon -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="top">
+      <div class="logo">
+        <img src="./img/logo.svg" class="imagem-logo" alt="" />
+      </div>
+      <img src="./img/seta.svg" id="btn" alt="" />
+    </div>
+
+    <nav>
+      <ul class="links">
+        <li class="user">
+            <a href="../perfil-adm/perfil.html" id="user-btn">
+              <img src="./img/perfilADM.svg" class="foto-perfil" alt="Foto de perfil do usuário" />
+              <p class="nome-usuario">Usuário</p>
+            </a>
+        </li>
+        <li>
+          <a href="../dashboard-adm/dashboard.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="../add-doacoes-adm/add-doacoes.html">
+            <i class="bx bx-list-plus"></i>
+            <span class="nav-item">Adicionar doações</span>
+          </a>
+        </li>
+        <li>
+          <a href="../doacoes-adm/doacoes.html">
+            <i class="bx bx-spreadsheet"></i>
+            <span class="nav-item">Doações</span>
+          </a>
+        </li>
+        <li>
+          <a href="../vistoria-adm/vistorias-pendentes.html">
+            <i class="bx bx-list-check"></i>
+            <span class="nav-item">Vistorias pendentes</span>
+          </a>
+        </li>
+        <li>
+          <a href="../historico-adm/historico.html">
+            <i class="bx bx-time-five"></i>
+            <span class="nav-item">Histórico</span>
+          </a>
+        </li>
+        <li>
+          <a href="../notificacoes-adm/notificacoes.html">
+            <i class="bx bx-bell"></i>
+            <span class="nav-item">Notificações</span>
+          </a>
+        </li>
+        <li>
+          <a href="../perfil-adm/perfil.html">
+            <i class="bx bx-cog"></i>
+            <span class="nav-item">Configurações</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sair">
+            <i class="bx bx-log-out"></i>
+            <span class="nav-item">Sair</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <header class="fundo-titulo">
+      <h1 class="titulo-pagina">Configurações</h1>
+    </header>
+
+    <section class="campo-titulo">
+      <h2 class="titulo-inicial">Perfil do administrador</h2>
+    </section>
+
+    <section class="campo-inicial">
+      <div class="fundo-perfil">
+        <img src="./img/foto-perfil.svg" class="foto-perfil-adm" alt="Foto de perfil do administrador">
+        <div class="dados-adm">
+          <h3 class="nome-adm">Leticia</h3>
+          <p class="email-adm">leticia@gmail.com</p>
+        </div>
+        <!-- modal editar perfil -->
+        <div class="modal-perfil">
+          <div class="content-perfil">
+            <img src="./img/Vector.svg" class="icon-x" alt="Ícone de um x para fechar o modal">
+            <div class="info-perfil">
+              <img src="./img/foto-perfil.svg" id="foto-perfil" alt="Foto de perfil">
+              <img src="./img/lapis.svg" id="lapis" alt="">
+              <div class="grupo">
+                <div class="campo-form">
+                  <label for="nome">Nome</label>
+                  <input type="name" name="nome" id="nome">
+                </div>
+                <div class="campo-form">
+                  <label for="telefone">Telefone</label>
+                  <input type="tel" name="telefone" id="telefone">
+                </div>
+              </div>
+              <div class="grupo">
+                <div class="campo-form">
+                  <label for="email-adm">Email</label>
+                  <input type="email" name="email-adm" id="email-adm">
+                </div>
+                <div class="campo-form">
+                  <label for="senha">Senha</label>
+                  <input type="password" name="senha" id="senha">
+                </div>
+              </div>
+              <div class="grupo">
+                <div class="botoes">
+                  <button class="btn-salvar">Salvar</button>
+                  <button class="excluir-conta">Excluir conta</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="modalBtn-perfil">Editar perfil</button>
+      </div>
+    </section>
+
+    <section class="campo-doacoes">
+      <h1 class="titulo-doacoes">Doações cadastradas</h1>
+      <div class="grupos">
+        <div class="grafico-coluna">
+          <script src="https://code.highcharts.com/highcharts.js"></script>
+          <script src="https://code.highcharts.com/modules/exporting.js"></script>
+          <script src="https://code.highcharts.com/modules/export-data.js"></script>
+          <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+          <figure class="highcharts-figure">
+            <div id="container"></div>
+          </figure>
+        </div>
+
+        <div class="grafico-pizza">
+          <script src="https://code.highcharts.com/highcharts.js"></script>
+          <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+          <script src="https://code.highcharts.com/modules/exporting.js"></script>
+          <script src="https://code.highcharts.com/modules/export-data.js"></script>
+          <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+          <figure class="highcharts-figure">
+            <div id="container2"></div>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script defer src="./js/sidebar.js"></script>
+  <script defer src="./js/grafico.js"></script>
+  <script defer src="./js/grafico-pizza.js"></script>
+  <script defer src="./js/editar-perfil.js"></script>
+</body>
+
+</html>
